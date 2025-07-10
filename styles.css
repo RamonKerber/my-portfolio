@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000000;
+  color: #F6F6F6;
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 100vh;
+  background: linear-gradient(45deg, #169976, #000000);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0.6rem 6rem -0.3rem rgba(29, 205, 159, 0.6);
+}
+
+header h1 span {
+  color: rgb(0, 0, 0);
+}
+
+header button {
+  margin-top: 1.25rem;
+  padding: 0.6rem 1.25rem;
+  background: rgb(0, 0, 0);
+  border: none;
+  color: #F6F6F6;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+header button:hover {
+  transform: scale(1.1);
+}
+
+section {
+  padding: 3rem 1.25rem;
+  text-align: center;
+}
+
+.about-text {
+  position: relative;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 1.25rem;
+  background-color: #161616;
+  border-left: 0.25rem solid #1DCD9F;
+  border-radius: 0.6rem;
+  word-wrap: break-word;
+}
+
+.about-text:hover {
+  transition: box-shadow 0.5s;
+  box-shadow: 0 0 1rem #1DCD9F;
+}
+
+.about-text p {
+  margin-bottom: 0.6rem;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.card {
+  width: 25%;
+  background: #161616;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 1rem #1DCD9F;
+}
+
+.card a {
+  color: #1DCD9F;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+#contact {
+  padding: 3rem 1.25rem;
+  text-align: center;
+}
+
+.contact-box {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 1.25rem;
+  background-color: #161616;
+  border-left: 0.25rem solid #1DCD9F;
+  border-radius: 0.6rem;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.contact-box:hover {
+  transition: box-shadow 0.5s;
+  box-shadow: 0 0 1rem #1DCD9F;
+}
+
+.contact-box p {
+  margin: 0.6rem 0;
+  font-size: 1rem;
+}
+
+.contact-box a {
+  color: #1DCD9F;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: 90%;
+  }
+
+  .about-text {
+    max-width: 90%;
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  form {
+    max-width: 90%;
+  }
+
+  header {
+    padding: 1.25rem 0.6rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    margin: 0.6rem 0;
+  }
+
+  header p {
+    font-size: 1.175rem;
+    margin: 0.6rem 0;
+  }
+
+  header button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
